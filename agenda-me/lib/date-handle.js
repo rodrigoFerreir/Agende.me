@@ -1,7 +1,12 @@
 
 const isWeekend = dayWeek => dayWeek === 0 || dayWeek === 6
 export const zeroPad = number => (number < 10 ? '0' + number : number.toString())
-export const frendlyDate = date => date.split('-').reverse().join('/')
+export const frendlyDate = date => {
+    if (date) {
+        return date.split('-').reverse().join('/')
+    }
+    return
+}
 const toDateString = (date) => `${date.getFullYear()}-${zeroPad(date.getMonth() + 1)}-${zeroPad(date.getDate())}`
 const isBlocked = (blockedDays, date) => blockedDays.indexOf(date) >= 0
 
