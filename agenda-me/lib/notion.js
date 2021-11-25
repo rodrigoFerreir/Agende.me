@@ -16,6 +16,39 @@ export const GetBlockedDays = async () => {
     return blockedDays
 }
 
+export const getEventsData = async (startDate) => {
+    const notion_data = await notion.databases.query({
+        database_id: process.env.SHEDULE_DATABASE,
+        page_size: 100,
+        filter: {
+            and: [
+                {
+                    property: 'Date',
+                    date: {
+                        on_or_after: startDate,
+                    }
+                },
+                {
+                    property: 'Confirmado',
+                    checkbox: {
+                        equals: true
+                    }
+                }
+            ]
+        }
+    })
+    const events = notion_data.results
+        .map(result => (
+            {
+                nome: result.properties.Name.title[0].plain_text,
+                telefone: result.properties.Telefone.phone_number,
+                obs: result.properties.Observações.rich_text[0].plain_text,
+                data: result.properties.Date.date.start
+            }
+        ))
+
+    return events
+}
 
 export const GetCountEventsByDays = async (startDate, endDate) => {
 
