@@ -19,9 +19,9 @@ function Agende() {
             </Head>
             <h1 className='font-bold text-2xl'>Agende</h1>
             <p className='text-gray-500 mb-4'>Selecione uma semana para agendar seu horário:</p>
-            <p className='mb-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700'>
-                <Link href={`/`}>
-                    <a>Voltar</a>
+            <p className='mb-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-700 hover:bg-green-900'>
+                <Link href={`/`} >
+                    <a >Voltar</a>
                 </Link>
             </p>
             {!data && <p>Carregando...</p>}

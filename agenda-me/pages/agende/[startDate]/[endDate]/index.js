@@ -35,7 +35,7 @@ function Agende() {
                 {`Selecione um dia para agendar seu horário,
                 semana selecionada : ${frendlyDate(router.query.startDate)} até ${frendlyDate(router.query.endDate)}`}
             </p>
-            <p className='mb-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700'>
+            <p className='mb-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-700 hover:bg-green-900'>
                 <Link href={`/agende`}>
                     <a>Voltar</a>
                 </Link>

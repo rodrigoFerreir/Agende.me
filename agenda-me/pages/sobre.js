@@ -1,6 +1,3 @@
-
-// import { Container } from './styles';
-
 import Head from "next/head";
 
 const Sobre = () => {
@@ -9,7 +6,9 @@ const Sobre = () => {
             <Head>
                 <title>Agenda.me - Sobre</title>
             </Head>
-            <h1 className='font-bold text-2xl'>Sobre</h1>
+            <h1 className='font-bold text-2xl text-green-900'>Sobre</h1>
+
+
         </>
     )
 }

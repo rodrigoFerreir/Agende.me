@@ -4,10 +4,10 @@ import Image from 'next/image'
 
 function Footer() {
     return (
-        <footer className='mt-10 text-center'>
+        <footer className='mt-10 text-center '>
             <p className='font-bold' >Agenda.me</p>
-            <p>Projeto de estudos</p>
-            <a href="https://github.com/rodrigoFerreir">
+            <p>Projeto Atlas</p>
+            <a href="https://github.com/TuboFit">
                 <Image
                     className="inline-block"
                     src={GitHubLogo}

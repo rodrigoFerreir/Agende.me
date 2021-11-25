@@ -22,7 +22,7 @@ function SelectDate() {
             <p className='text-gray-500 mb-4'>
                 {`Selecione o seu horário:`}
             </p>
-            <p className='mb-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700'>
+            <p className='mb-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-700 hover:bg-green-900'>
                 <Link href={`/agende/${router.query.startDate}/${router.query.endDate}`}>
                     <a>Voltar</a>
                 </Link>
