@@ -98,31 +98,26 @@ export default function Example() {
                             <div className="mt-6">
                                 <nav className="grid gap-y-8">
                                     <Link href={'/sobre'}>
-                                        <a
-                                            href={' '}
-                                            className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                                        >
+                                        <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                                             <span className="ml-3 text-base font-medium text-green-800">
                                                 Sobre o Profissional
                                             </span>
                                         </a>
                                     </Link>
-                                    <a
-                                        href={' '}
-                                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                                    >
-                                        <span className="ml-3 text-base font-medium text-green-800">
-                                            Contato
-                                        </span>
-                                    </a>
-                                    <a
-                                        href={' '}
-                                        className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                                    >
-                                        <span className="ml-3 text-base font-medium text-green-800">
-                                            Forma de atendimento
-                                        </span>
-                                    </a>
+                                    <Link href={'/contato'}>
+                                        <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                            <span className="ml-3 text-base font-medium text-green-800">
+                                                Contato
+                                            </span>
+                                        </a>
+                                    </Link>
+                                    <Link href={'/atendimento'}>
+                                        <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                            <span className="ml-3 text-base font-medium text-green-800">
+                                                Forma de atendimento
+                                            </span>
+                                        </a>
+                                    </Link>
                                 </nav>
                             </div>
                         </div>
